@@ -114,15 +114,3 @@ And run the executable :
    [INFO] -----------------------------------
    [INFO]         COMMAND SUCCESSFUL         
    [INFO] -----------------------------------
-
-Contents
-========
-
-.. toctree::
-   :maxdepth: 2
-
-   introduction
-   installation
-   tutorial
-
-
