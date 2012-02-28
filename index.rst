@@ -6,11 +6,11 @@
 Welcome to SBS's documentation!
 ===============================
 
-SBS gives you an easy, component based way to create makefiles and configuration files for C/C++ project :
+SBS (Screen Build System) gives you an easy, component based way to create makefiles and configuration files for C/C++ project :
 
-* Simple component decription with XMl files
+* Simple component decription with XML files
 * Easy configuration
-* *Maven-like* Repository based strategy for easy dependency handling
+* *Maven-like* repository based strategy for easy dependency handling
 * Support for multiple compilers toolchains and environments
 
 Hello world

@@ -2,8 +2,10 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
 
+   index
    introduction
    installation
-   tutorial
+   configuration
+   tutorial/helloworld
