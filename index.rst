@@ -14,7 +14,7 @@ SBS (Screen Build System) gives you an easy, component based way to create makef
 * Support for multiple compilers toolchains and environments
 
 How it works !!
-===============
+---------------
 
 Create your component file :
 
@@ -46,15 +46,13 @@ Compile and run with SBS :
 .. code-block:: console
 
    > sbs build .
-   [INFO] ...
+   ...
    > sbs run .
    [INFO] ------------ begin SBS ------------
-   [INFO] /home/thoratou/.sbs/repositories/HelloWorld/1.0.0/exe/Linux/Release/./HelloWorld
+   [INFO] /home/user/.sbs/repositories/HelloWorld/1.0.0/exe/Linux/Release/./HelloWorld
    [INFO] Hello world !!
    [INFO] ------------- end SBS -------------
    [INFO] 
    [INFO] -----------------------------------
    [INFO]         COMMAND SUCCESSFUL         
    [INFO] -----------------------------------
-
-It works !!

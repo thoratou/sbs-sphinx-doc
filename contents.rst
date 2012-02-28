@@ -1,5 +1,5 @@
-Contents
-========
+Documentation
+=============
 
 .. toctree::
    :maxdepth: 5
