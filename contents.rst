@@ -9,3 +9,5 @@ Documentation
    installation
    configuration
    tutorial/helloworld
+   targets
+   

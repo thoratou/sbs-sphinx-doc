@@ -13,7 +13,7 @@ Here, the default user configuration and gcc+makefile.
    [INFO]
    [INFO] -----------------------------------
    [INFO] COMMAND SUCCESSFUL
-   [INFO]-----------------------------------
+   [INFO] -----------------------------------
 
 You can now generate you component description.
 
@@ -27,7 +27,7 @@ You can now generate you component description.
    [INFO]
    [INFO] -----------------------------------
    [INFO] COMMAND SUCCESSFUL
-   [INFO]-----------------------------------
+   [INFO] -----------------------------------
    
 *Output component file (sbs.xml)* :
 
