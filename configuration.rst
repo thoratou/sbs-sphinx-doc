@@ -65,3 +65,5 @@ The *-g* option indicates we create global configuration (i.e common to all comp
 You can define configurations for a specific project using *-p <component-path>* instead.
 
 The *-e <configuration>* indicates which configuration files will be used by SBS.
+
+For complete configuration usage, look at :ref:`configure target <target-configure>`.

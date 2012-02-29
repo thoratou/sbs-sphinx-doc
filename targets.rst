@@ -11,6 +11,8 @@ All SBS command are design in the same way :
 
    > sbs <target> [mandatory parameters] [optional parameters]
 
+.. _target-build:
+
 build
 -----
 
@@ -60,38 +62,159 @@ Build a component issuing a specific compoenent file :
    > sbs build . -i sbs-linux.xml
 
 
+.. _target-clean:
+
 clean
 -----
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-check:
 
 check
 -----
 
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-compile:
+
 compile
 -------
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-configure:
 
 configure
 ---------
 
+Parameters
+~~~~~~~~~~
+
+* optional
+   * *-g* : indicate to set up global configuration
+   * *-p <component-path>* : set up specific configuration for a given component 
+   * *-c* : clean up configuration instead of setting up
+   * *-e <configuration>* : configuration file to add to the configuration
+   * *-v* : verbose mode
+
+Examples
+~~~~~~~~
+
+Set up global configuration for gcc/linux :
+
+.. code-block:: console
+
+   > sbs configure -g -e user -e linux
+   
+Set up component configuration for Wascana/Windows :
+
+.. code-block:: console
+
+   > sbs configure -p . -e user -e wascana
+   
+Clean up global configuration
+
+.. code-block:: console
+
+   > sbs configure -g -c
+
+.. _target-create-component:
+
 create-component
 ----------------
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-flags:
 
 flags
 -----
 
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-generate:
+
 generate
 --------
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-help:
 
 help
 ----
 
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-repository:
+
 repository
 ----------
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-run:
 
 run
 ---
 
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-runtime-display:
+
 runtime-display
 ---------------
 
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~
+
+.. _target-test:
+
 test
 ----
+
+Parameters
+~~~~~~~~~~
+
+Examples
+~~~~~~~~

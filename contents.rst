@@ -2,7 +2,7 @@ Documentation
 =============
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
 
    index
    introduction
