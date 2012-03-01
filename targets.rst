@@ -80,6 +80,14 @@ clean
 Parameters
 ~~~~~~~~~~
 
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-i <sbs-file>* : select specific sbs xml file
+   * *-t* : target test
+   * *-b* : target both main and test
+   * *-v* : verbose mode
+
 Examples
 ~~~~~~~~
 
@@ -95,6 +103,15 @@ check
 Parameters
 ~~~~~~~~~~
 
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-i <sbs-file>* : select specific sbs xml file
+   * *-t* : target test
+   * *-b* : target both main and test
+   * *-d* : debug build
+   * *-v* : verbose mode
+
 Examples
 ~~~~~~~~
 
@@ -109,6 +126,13 @@ compile
 
 Parameters
 ~~~~~~~~~~
+
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-t* : target test
+   * *-b* : target both main and test
+   * *-v* : verbose mode
 
 Examples
 ~~~~~~~~
@@ -190,6 +214,15 @@ generate
 Parameters
 ~~~~~~~~~~
 
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-i <sbs-file>* : select specific sbs xml file
+   * *-t* : target test
+   * *-b* : target both main and test
+   * *-d* : debug build
+   * *-v* : verbose mode
+
 Examples
 ~~~~~~~~
 
@@ -234,6 +267,13 @@ run
 Parameters
 ~~~~~~~~~~
 
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-i <sbs-file>* : select specific sbs xml file
+   * *-d* : debug build
+   * *-v* : verbose mode
+
 Examples
 ~~~~~~~~
 
@@ -261,6 +301,13 @@ test
 
 Parameters
 ~~~~~~~~~~
+
+* mandatory
+   * *<component-path>* : path to component (i.e that contains a sbs.xml file)
+* optional
+   * *-i <sbs-file>* : select specific sbs xml file
+   * *-d* : debug build
+   * *-v* : verbose mode
 
 Examples
 ~~~~~~~~
