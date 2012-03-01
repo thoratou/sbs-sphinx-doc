@@ -3,9 +3,9 @@ Target List
 
 All SBS command are design in the same way :
 
-* a target, that basically represents the action(s) to perform
-* a list of mandatory parameters
-* a list of optional parameters
+* A target, that basically represents the action(s) to perform.
+* A list of mandatory parameters.
+* A list of optional parameters.
 
 .. code-block:: console
 
@@ -15,6 +15,10 @@ All SBS command are design in the same way :
 
 build
 -----
+
+| Build a component and/or tests in release or debug mode.
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
@@ -67,6 +71,12 @@ Build a component issuing a specific compoenent file :
 clean
 -----
 
+| Clean a component and/or tests.
+| Remove all object/libraries/executables.
+| Remove CMake files/Makefiles/Environment files.
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
+
 Parameters
 ~~~~~~~~~~
 
@@ -77,6 +87,10 @@ Examples
 
 check
 -----
+
+| Verifiy XML component description file.
+| Need global or component specific configuration.
+| Need a component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
@@ -89,6 +103,10 @@ Examples
 compile
 -------
 
+| Compile componenet without regenrating CMake files.
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
+
 Parameters
 ~~~~~~~~~~
 
@@ -99,6 +117,8 @@ Examples
 
 configure
 ---------
+
+| Configure global or component specific configuration.
 
 Parameters
 ~~~~~~~~~~
@@ -125,7 +145,7 @@ Set up component configuration for Wascana/Windows :
 
    > sbs configure -p . -e user -e wascana
    
-Clean up global configuration
+Clean up global configuration :
 
 .. code-block:: console
 
@@ -135,6 +155,9 @@ Clean up global configuration
 
 create-component
 ----------------
+
+| Create a component from scratch.
+| Need a valid component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
@@ -147,6 +170,8 @@ Examples
 flags
 -----
 
+| Add/modify/remove compile flag(s) to component description.
+
 Parameters
 ~~~~~~~~~~
 
@@ -157,6 +182,10 @@ Examples
 
 generate
 --------
+
+| Generate component and/or test CMake files in release or debug mode.
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
@@ -169,6 +198,10 @@ Examples
 help
 ----
 
+| Help target.
+| If no target specified, print target list.
+| Else, print target help.
+
 Parameters
 ~~~~~~~~~~
 
@@ -179,6 +212,9 @@ Examples
 
 repository
 ----------
+
+| Generic target to handle repositories.
+| Need global or component specific configuration.
 
 Parameters
 ~~~~~~~~~~
@@ -191,6 +227,10 @@ Examples
 run
 ---
 
+| Run the component executable
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
+
 Parameters
 ~~~~~~~~~~
 
@@ -202,6 +242,8 @@ Examples
 runtime-display
 ---------------
 
+| Display all library and executable dependency paths.
+
 Parameters
 ~~~~~~~~~~
 
@@ -212,6 +254,10 @@ Examples
 
 test
 ----
+
+| Run the component tests
+| Need global or component specific configuration.
+| Need a valid component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
