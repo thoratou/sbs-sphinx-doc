@@ -10,8 +10,10 @@ All SBS command are design in the same way :
 .. code-block:: console
 
    > sbs <target> [mandatory parameters] [optional parameters]
-
+   
 .. _target-build:
+
+""""
 
 build
 -----
@@ -53,18 +55,19 @@ Build both component and component tests :
 
    > sbs build . -b
    
-Build both component in debug mode :
+Build component in debug mode :
 
 .. code-block:: console
 
    > sbs build . -d
    
-Build a component issuing a specific compoenent file :
+Build a component using a specific component file :
 
 .. code-block:: console
 
    > sbs build . -i sbs-linux.xml
 
+""""
 
 .. _target-clean:
 
@@ -91,6 +94,32 @@ Parameters
 Examples
 ~~~~~~~~
 
+Clean a component :
+
+.. code-block:: console
+
+   > sbs clean .
+   
+Clean component tests :
+
+.. code-block:: console
+
+   > sbs clean . -t
+
+Clean both component and component tests :
+
+.. code-block:: console
+
+   > sbs clean . -b   
+   
+Clean a component using a specific component file :
+
+.. code-block:: console
+
+   > sbs clean . -i sbs-linux.xml
+
+""""
+
 .. _target-check:
 
 check
@@ -115,6 +144,38 @@ Parameters
 Examples
 ~~~~~~~~
 
+Check a component :
+
+.. code-block:: console
+
+   > sbs check .
+   
+Check component tests :
+
+.. code-block:: console
+
+   > sbs check . -t
+
+Check both component and component tests :
+
+.. code-block:: console
+
+   > sbs check . -b
+   
+Check component in debug mode :
+
+.. code-block:: console
+
+   > sbs check . -d
+   
+Check a component using a specific component file :
+
+.. code-block:: console
+
+   > sbs check . -i sbs-linux.xml
+
+""""
+
 .. _target-compile:
 
 compile
@@ -137,6 +198,26 @@ Parameters
 Examples
 ~~~~~~~~
 
+Compile a component :
+
+.. code-block:: console
+
+   > sbs compile .
+   
+Compile component tests :
+
+.. code-block:: console
+
+   > sbs compile . -t
+
+Compile both component and component tests :
+
+.. code-block:: console
+
+   > sbs compile . -b
+    
+""""
+  
 .. _target-configure:
 
 configure
@@ -175,19 +256,31 @@ Clean up global configuration :
 
    > sbs configure -g -c
 
+""""
+
 .. _target-create-component:
 
 create-component
 ----------------
 
 | Create a component from scratch.
-| Need a valid component description file (default : sbs.xml).
 
 Parameters
 ~~~~~~~~~~
 
+* mandatory :
+   * *<component-path>* : path to component to create
+   * *<component-name>* : the component name
+   * *<component-version>* : the component version
+   * *<component-buildtype>* : the component build type (executable, static, shared)
+* optional :
+   *-o <sbs-file>* : select specific sbs xml file
+   *-v* : verbose mode
+   
 Examples
 ~~~~~~~~
+
+""""
 
 .. _target-flags:
 
@@ -201,6 +294,8 @@ Parameters
 
 Examples
 ~~~~~~~~
+
+""""
 
 .. _target-generate:
 
@@ -226,6 +321,38 @@ Parameters
 Examples
 ~~~~~~~~
 
+Generate CMake files for a component :
+
+.. code-block:: console
+
+   > sbs generate .
+   
+Generate CMake files for component tests :
+
+.. code-block:: console
+
+   > sbs generate . -t
+
+Generate CMake files for both component and component tests :
+
+.. code-block:: console
+
+   > sbs generate . -b
+   
+Generate CMake files for component in debug mode :
+
+.. code-block:: console
+
+   > sbs generate . -d
+   
+Generate CMake files for a component using a specific component file :
+
+.. code-block:: console
+
+   > sbs generate . -i sbs-linux.xml
+
+""""
+
 .. _target-help:
 
 help
@@ -241,6 +368,8 @@ Parameters
 Examples
 ~~~~~~~~
 
+""""
+
 .. _target-repository:
 
 repository
@@ -254,6 +383,8 @@ Parameters
 
 Examples
 ~~~~~~~~
+
+""""
 
 .. _target-run:
 
@@ -277,6 +408,26 @@ Parameters
 Examples
 ~~~~~~~~
 
+Run an executable component :
+
+.. code-block:: console
+
+   > sbs run .
+   
+Run an executable component in debug mode :
+
+.. code-block:: console
+
+   > sbs run . -d
+   
+Run an executable component using a specific component file :
+
+.. code-block:: console
+
+   > sbs run . -i sbs-linux.xml
+
+""""
+
 .. _target-runtime-display:
 
 runtime-display
@@ -289,6 +440,8 @@ Parameters
 
 Examples
 ~~~~~~~~
+
+""""
 
 .. _target-test:
 
@@ -311,3 +464,21 @@ Parameters
 
 Examples
 ~~~~~~~~
+
+Run component tests :
+
+.. code-block:: console
+
+   > sbs test .
+   
+Run component tests in debug mode :
+
+.. code-block:: console
+
+   > sbs test . -d
+   
+Run component tests using a specific component file :
+
+.. code-block:: console
+
+   > sbs test . -i sbs-linux.xml
