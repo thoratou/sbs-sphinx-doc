@@ -1,3 +1,5 @@
+.. _targets:
+
 Target List
 ===========
 

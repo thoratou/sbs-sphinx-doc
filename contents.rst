@@ -1,3 +1,5 @@
+.. _contents:
+
 Documentation
 =============
 
@@ -10,4 +12,5 @@ Documentation
    configuration
    tutorial/helloworld
    targets
+   glossary
    

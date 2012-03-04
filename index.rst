@@ -1,3 +1,5 @@
+.. _index:
+
 .. SBS documentation master file, created by
    sphinx-quickstart on Sat Feb 25 11:04:07 2012.
    You can adapt this file completely to your liking, but it should at least
