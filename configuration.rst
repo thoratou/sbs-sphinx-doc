@@ -34,7 +34,7 @@ Here you can find a list of current officially supported toolchain configuration
 +--------------------+--------------------+--------------------+--------------------+
 | msys               | Windows            | MSYS               | MingW              |
 +--------------------+--------------------+--------------------+--------------------+
-| msv8               | Windows            | QtCreator          | MingW              |
+| msv8               | Windows            | Visual C++ 8       | Visual C++         |
 +--------------------+--------------------+--------------------+--------------------+
 | wascana            | Windows            | Wascana and        | MingW              |
 |                    |                    | Eclipse C++        |                    |
