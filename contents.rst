@@ -16,6 +16,8 @@ Documentation
    tutorial/develop-libraries
    tutorial/test-libraries
    tutorial/deploy-applications
+   advanced/understand
+   advanced/server
    targets
    glossary
    
