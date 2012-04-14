@@ -64,8 +64,17 @@ open the generated *sbs.xml* file to verify its data :
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
-         <buildtype>executable</buildtype>
+         <type>executable</type>
       </properties>
+      <main>
+         <build>
+            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+            <output path="exe"/>
+         </build>
+         <delivery>
+            <output path="exe" public="true"/>
+         </delivery>
+      </main>
    </pack>
    
 Now, you need to code your executable. To do this, create the *src/main.cpp* file and write the code :

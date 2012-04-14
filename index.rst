@@ -27,8 +27,17 @@ Create your component file :
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
-         <buildtype>executable</buildtype>
+         <type>executable</type>
       </properties>
+      <main>
+         <build>
+            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+            <output path="exe"/>
+         </build>
+         <delivery>
+            <output path="exe" public="true"/>
+         </delivery>
+      </main>
    </pack>
    
 Write your code :
