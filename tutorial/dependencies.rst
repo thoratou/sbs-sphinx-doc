@@ -33,8 +33,8 @@ You should have those data into the *crumble* file :
 
    <?xml version="1.0" encoding="UTF-8"?>
    <crumble>
-      <server name="screenlib3d" path="screenlib3d.com" port="58553" archive="http://archive.screenlib3d.com:58554">
-         <repository location-type="remote" delivery="release" remote-path="tutorial">
+      <server name="screenlib3d" path="screenlib3d.com" port="58553">
+         <repository name="tutorial" location-type="remote" delivery="release">
             <component name="glm" version="0.9.2.3" toolchain="x86-32_mingw" buildmode="release" />
             <component name="glm" version="0.9.2.3" toolchain="x86-32_mingw" buildmode="debug" />
          </repository>
@@ -45,7 +45,7 @@ Then, give it to SBS by using the command :
 
 .. code-block:: console
 
-   > sbs repository feed dependency-tuto.crumble
+   > sbs feed dependency-tuto.crumble
    ...
 
 That's it, the *glm* component is registered, now, let's see how to use it.
@@ -57,7 +57,7 @@ First of all, in a new folder, create a component named *Hello/GLM* :
 
 .. code-block:: console
 
-   sbs create-component . HelloWorld 1.0.0 executable
+   > sbs create-component . HelloWorld 1.0.0 executable
 
 Then write the code into the *main.cpp* file :
 
