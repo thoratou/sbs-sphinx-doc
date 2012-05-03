@@ -1,4 +1,4 @@
-.. _tutorial-server:
+.. _advanced-server:
 
 Set up an SBS server
 ====================

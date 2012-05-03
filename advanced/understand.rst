@@ -1,4 +1,4 @@
-.. _tutorial-understand:
+.. _advanced-understand:
 
 Understand SBS
 ==============
