@@ -7,7 +7,7 @@ Overview
 --------
 
 SBS configuration is based on a set of configuration files.
-Actually, we need to use 2 kinds of configuration files :
+Actually, you need to use 2 kinds of configuration files :
 
 * The user configuration. The default *user* configuration is enough in most of the cases
 * The toolchain configuration. It indicates which compiler and environment you want to use.
@@ -62,7 +62,7 @@ For example :
    [INFO] COMMAND SUCCESSFUL
    [INFO] -----------------------------------
    
-The *-g* option indicates we create global configuration (i.e common to all components).
+The *-g* option indicates you create global configuration (i.e common to all components).
 
 You can define configurations for a specific project using *-p <component-path>* instead.
 

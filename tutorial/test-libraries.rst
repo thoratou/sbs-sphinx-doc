@@ -3,15 +3,15 @@
 Test your libraries
 ===================
 
-In the previous page, we created 2 libraries, *Lib42/Static* and *Lib42/Shared*.
-In this tutorial, we will learn how to create unit tests for those libraries.
+In the previous page, you created 2 libraries, *Lib42/Static* and *Lib42/Shared*.
+In this tutorial, you will learn how to create unit tests for those libraries.
 
 Create basic tests
 ------------------
 
-In this part, we will reuse *Lib42/Static*.
+In this part, you will reuse *Lib42/Static*.
 
-To create unit test in a component, you need to use the add-test target :
+To create unit test in a component, you need to use the :ref:`add-test <target-add-test>` target :
 
 .. code-block:: console
 

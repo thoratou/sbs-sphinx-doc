@@ -3,9 +3,9 @@
 Define compilation flags with SBS
 =================================
 
-In this part, we will see different approaches in compilation flags handling with SBS.
+In this part, you will see different approaches in compilation flags handling with SBS.
 
-We will reuse the previous Hello world example.
+You will reuse the previous Hello world example.
 
 Use component flags
 -------------------
@@ -196,7 +196,7 @@ Use compiler flags
 ------------------
 
 In the previous examples, only component flags (i.e that are sued by the component code) were used.
-In this part, we take care about compiler flags.
+In this part, you take care about compiler flags.
 
 There are currently 2 kinds of compiler flags :
 

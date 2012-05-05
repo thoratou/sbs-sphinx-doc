@@ -3,15 +3,15 @@
 Develop libraries
 =================
 
-In this tutorial, we will create two versions of the same library, a static one and a dynamic one.
+In this tutorial, you will create two versions of the same library, a static one and a dynamic one.
 It consists into a simple library that returns de number 42.
 
-We will also create an executable to call and display the result of the function given by the library.
+You will also create an executable to call and display the result of the function given by the library.
 
 Create a static library component
 ---------------------------------
 
-As in previous pages, the component must be created from scratch. To do it, use the create-component target as follows :
+As in previous pages, the component must be created from scratch. To do it, use the :ref:`create-component <target-create-component>` target as follows :
 
 .. code-block:: console
 
@@ -76,7 +76,7 @@ Now compile the library :
 Use your new static library
 ---------------------------
 
-To use the previous library, we need to create an executable component :
+To use the previous library, you need to create an executable component :
 
 .. code-block:: console
 
@@ -127,14 +127,14 @@ Compile and run the executable.
 Create a shared library component
 ---------------------------------
 
-In the same way than the static library, use the create-component target to create the shared library :
+In the same way than the static library, use the :ref:`create-component <target-create-component>` target to create the shared library :
 
 .. code-block:: console
 
    > sbs create-component . Lib42/Shared 1.0.0 shared
 
 Then, modify the *sbs.xml* file to add the *LIB_42_BUILD_SHARED_LIBRARY* flag (no value needs to be set).
-This technical flag we help us to create a fully portable shared library.
+This technical flag you help us to create a fully portable shared library.
 
 .. code-block:: xml
 
@@ -179,6 +179,8 @@ Then, implement the library code sources.
    #else
    #  define LIB_42_EXPORT
    #endif
+   
+   #endif
 
 *include/lib42.h* :
 
@@ -213,7 +215,7 @@ Now compile the library :
 Use your new shared library
 ---------------------------
 
-To use the previously created shared library, we will reuse the Hello42 component.
+To use the previously created shared library, you will reuse the Hello42 component.
 You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
 
 .. code-block:: xml

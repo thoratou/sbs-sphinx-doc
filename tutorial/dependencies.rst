@@ -7,9 +7,9 @@ Dependencies are an easy way to use external libraries in your projects.
 Just by giving the name and the version of the component that contains the library,
 you can use it without knowing all this specificities (include and library paths, full library name, used flags, etc ...).
 
-In this, part, we will not create a complete library (we will see it in the next page), 
-but we will use a library component taken from an SBS server.
-We will not see in details how works SBS servers, repositories and components in this page,
+In this, part, you will not create a complete library (you will see it in the next page), 
+but you will use a library component taken from an SBS server.
+You will not see in details how works SBS servers, repositories and components in this page,
 but only the way to declare and retrieve components.
 
 For this tutorial purpose, the **glm** library is used.
@@ -18,7 +18,7 @@ Retrieve component from remote SBS server
 -----------------------------------------
 
 Today you are lucky, I give you all you need to retrieve the component from the SBS server.
-To declare all the components you can retrieve from an SBS server, we will use a *crumble* file.
+To declare all the components you can retrieve from an SBS server, you will use a *crumble* file.
 
 *crumble* stands for *Component and Repository Unified Manifest BundLE*. It contains :
 

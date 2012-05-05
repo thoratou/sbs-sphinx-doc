@@ -3,7 +3,7 @@
 Basic Example
 =============
 
-In this tutorial, we will create a basic C++ *Hello world* example.
+In this tutorial, you will create a basic C++ *Hello world* example.
 
 Configuration
 -------------
@@ -33,7 +33,7 @@ Each component needs at least 3 data into the *sbs.xml* file to be able to compi
 Component creation
 ------------------
 
-In the previous part, we saw all needed information to create the basic *Hello world* example.
+In the previous part, you saw all needed information to create the basic *Hello world* example.
 SBS provides a simple target to create this basic component : :ref:`create-component <target-create-component>`.
 It can simply be used as follow :
 
@@ -41,7 +41,7 @@ It can simply be used as follow :
 
    > sbs create-component <component-path> <component-name> <component-version> <component-type>
 
-For this tutorial, we set the name to *HelloWorld* and the version to *1.0.0* :
+For this tutorial, you set the name to *HelloWorld* and the version to *1.0.0* :
 
 .. code-block:: console
 
@@ -161,7 +161,7 @@ Each component could be compile in both release or debug mode.
 
 The debug mode will allow you to have additional information into debuggers (gdb, ...), and to add specific compilation flags if needed.
 
-In the previous part, we only compiled in release mode.
+In the previous part, you only compiled in release mode.
 To handle the debug mode, use the *-d* option on different targets :
 
 .. code-block:: console

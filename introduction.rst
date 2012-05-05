@@ -20,7 +20,7 @@ SBS was developed with some strict requirements in mind in order to follow Scree
 * **Simplicity** : 
    * Project descriptions must be easy to read and write, and must describe a minimum sort of items (include files, library names, compile flags, …),
    * External libraries, i.e that hasn't been compiled with SBS, must be easily integrated into SBS projects,
-   * We could easily switch between environments,
+   * you could easily switch between environments,
 * **Extensibility** : 
    * It could manage lots of projects at the same time. Screen is separated into many shared libraries, and new libraries are created all the time. SBS must handle these kinds of issues,
    * SBS must be able to integrate some specific user requirements (for example, generate code from Flex/Bison files directly with an SBS command).
