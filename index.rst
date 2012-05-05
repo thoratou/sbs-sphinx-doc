@@ -35,7 +35,7 @@ Create your component file :
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe"/>
+            <files path="exe"/>
          </delivery>
       </main>
    </pack>

@@ -72,7 +72,7 @@ open the generated *sbs.xml* file to verify its data :
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe"/>
+            <files path="exe"/>
          </delivery>
       </main>
    </pack>

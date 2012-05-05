@@ -36,7 +36,7 @@ You should have this output :
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib"/>
+            <files path="lib"/>
          </delivery>
       </main>
       <test>
@@ -124,7 +124,7 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib"/>
+            <files path="lib"/>
          </delivery>
       </main>
       <test>
