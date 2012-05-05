@@ -282,6 +282,49 @@ Parameters
 Examples
 ~~~~~~~~
 
+.. _target-deploy:
+
+""""
+
+deploy
+------
+
+| Deploy a component set in release or debug mode.
+| Need global or component specific configuration.
+| Need a valid deployment file (default : deploy.xml).
+
+Parameters
+~~~~~~~~~~
+
+* mandatory
+   * *<input-path>* : path to deployment file (i.e that contains a deploy.xml file)
+   * *<output-path>* : path to deploy the component set
+* optional
+   * *-i <deploy-file>* : select specific deployment xml file
+   * *-d* : debug build
+   * *-v* : verbose mode
+
+Examples
+~~~~~~~~
+
+Deploy a component set :
+
+.. code-block:: console
+
+   > sbs deploy . .
+      
+Deploy a component set in debug mode :
+
+.. code-block:: console
+
+   > sbs deploy . . -d
+   
+Deploy a component set using a specific deployment file :
+
+.. code-block:: console
+
+   > sbs deploy . . -i sbs-linux.xml
+
 """"
 
 .. _target-flags:
