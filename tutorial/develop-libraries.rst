@@ -36,7 +36,7 @@ THe *sbs.xml* file should contain those data :
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib" public="true"/>
+            <output path="lib"/>
          </delivery>
       </main>
    </pack>
@@ -102,7 +102,7 @@ Then, add the dependency *Lib42/Static* in the component as follows :
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe"/>
          </delivery>
       </main>
    </pack>
@@ -156,7 +156,7 @@ This technical flag you help us to create a fully portable shared library.
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib" public="true"/>
+            <output path="lib"/>
          </delivery>
       </main>
    </pack>
@@ -236,7 +236,7 @@ You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe"/>
          </delivery>
       </main>
    </pack>

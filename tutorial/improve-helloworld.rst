@@ -42,7 +42,7 @@ The easiest way to define compilation flags is to modify the sbs.xml file. For e
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe"/>
          </delivery>
       </main>
    </pack>
@@ -108,7 +108,7 @@ Then, modify the *sbs.xml* :
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe""/>
          </delivery>
       </main>
    </pack>
@@ -155,7 +155,7 @@ Let's take the basic flag example fromthe beginning of this page and define diff
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe"/>
          </delivery>
       </main>
    </pack>
@@ -224,7 +224,7 @@ For example :
             <output path="exe"/>
          </build>
          <delivery>
-            <output path="exe" public="true"/>
+            <output path="exe"/>
          </delivery>
       </main>
    </pack>

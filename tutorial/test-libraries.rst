@@ -36,7 +36,7 @@ You should have this output :
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib" public="true"/>
+            <output path="lib"/>
          </delivery>
       </main>
       <test>
@@ -55,7 +55,6 @@ In this folder, add the *main.cpp* file.
 
 .. code-block:: cpp
    
-   int main(){
    #include <iostream>
    #include <cstdlib>
    #include "lib42.h"
@@ -125,7 +124,7 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
          </build>
          <delivery>
             <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <output path="lib" public="true"/>
+            <output path="lib"/>
          </delivery>
       </main>
       <test>
