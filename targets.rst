@@ -327,6 +327,33 @@ Deploy a component set using a specific deployment file :
 
 """"
 
+.. _target-feed:
+
+feed
+----
+
+| Feed component declarations from a *crumble* file.
+| Need a valid *crumble* file.
+
+Parameters
+~~~~~~~~~~
+
+* mandatory
+   * *<crumble-file>* : filepath to *crumble* file
+* optional
+   * *-v* : verbose mode
+
+Examples
+~~~~~~~~
+
+Feed from a *crumble* file :
+
+.. code-block:: console
+
+   > sbs feed example.crumble
+      
+""""
+
 .. _target-flags:
 
 flags
