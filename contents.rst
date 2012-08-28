@@ -18,9 +18,9 @@ Documentation
    tutorial/deploy-applications
    advanced/understand
    advanced/repository
-   advanced/server
    advanced/create-toolchain
    advanced/buildbot
+   server/basis
    targets
    glossary
    
@@ -55,9 +55,16 @@ Advanced tutorials
 
    advanced/understand
    advanced/repository
-   advanced/server
    advanced/create-toolchain
    advanced/buildbot
+
+Server tutorials
+----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   server/basis
 
 Index
 -----
