@@ -21,6 +21,7 @@ Documentation
    advanced/create-toolchain
    advanced/buildbot
    server/basis
+   server/service
    targets
    glossary
    
@@ -65,6 +66,7 @@ Server tutorials
    :maxdepth: 2
 
    server/basis
+   server/service
 
 Index
 -----
