@@ -1,0 +1,8 @@
+#sphinx build
+build
+
+#eclipse
+.externalToolBuilders
+.project
+.pydevproject
+.settings
