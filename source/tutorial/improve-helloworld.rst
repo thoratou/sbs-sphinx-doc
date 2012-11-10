@@ -27,7 +27,7 @@ The easiest way to define compilation flags is to modify the sbs.xml file. For e
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
@@ -45,7 +45,7 @@ The easiest way to define compilation flags is to modify the sbs.xml file. For e
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
    
 Then compile and run it :
 
@@ -73,7 +73,7 @@ Let's take the basic flag example fromthe beginning of this page and define diff
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
@@ -92,7 +92,7 @@ Let's take the basic flag example fromthe beginning of this page and define diff
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
    
 Then compile and run it in release mode :
 
@@ -142,7 +142,7 @@ For example :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
@@ -161,6 +161,6 @@ For example :
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 In the same way, than component flags, you can define compiler flags for specific a build mode and/or toolchain.

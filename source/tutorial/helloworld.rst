@@ -60,7 +60,7 @@ open the generated *sbs.xml* file to verify its data :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
@@ -75,7 +75,7 @@ open the generated *sbs.xml* file to verify its data :
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
    
 Now, you need to code your executable. To do this, create the *src/main.cpp* file and write the code :
 

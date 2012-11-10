@@ -23,7 +23,7 @@ Create your component file :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
@@ -38,7 +38,7 @@ Create your component file :
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
    
 Write your code :
 

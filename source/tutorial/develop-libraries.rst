@@ -22,7 +22,7 @@ THe *sbs.xml* file should contain those data :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
@@ -39,7 +39,7 @@ THe *sbs.xml* file should contain those data :
             <files path="lib"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 Here the include folder is added in both *build* and *delivery* parts,
 as the client executables/libraries need to get explicitly the interface headers.
@@ -87,7 +87,7 @@ Then, add the dependency *Lib42/Static* in the component as follows :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Hello42</name>
          <version>1.0.0</version>
@@ -105,7 +105,7 @@ Then, add the dependency *Lib42/Static* in the component as follows :
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 At last, implement the *main.cpp* file.
 
@@ -139,7 +139,7 @@ This technical flag you help us to create a fully portable shared library.
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Lib42/Shared</name>
          <version>1.0.0</version>
@@ -159,7 +159,7 @@ This technical flag you help us to create a fully portable shared library.
             <files path="lib"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 Then, implement the library code sources.
    
@@ -221,7 +221,7 @@ You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Hello42</name>
          <version>1.0.0</version>
@@ -239,6 +239,6 @@ You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 Compile and run the executable.

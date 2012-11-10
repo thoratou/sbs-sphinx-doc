@@ -22,7 +22,7 @@ You should have this output :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
@@ -45,7 +45,7 @@ You should have this output :
             <output path="exe"/>
          </build>
       </test>
-   </pack>
+   </component>
 
 The *test* folder has been created.
 
@@ -110,7 +110,7 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
@@ -136,7 +136,7 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
             <output path="exe"/>
          </build>
       </test>
-   </pack>
+   </component>
 
 Now implement the following test files :
 

@@ -81,7 +81,7 @@ To fix it, the *glm* component needs to be declared into the *sbs.xml* file :
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <pack>
+   <component>
       <properties>
          <name>Hello/GLM</name>
          <version>1.0.0</version>
@@ -99,6 +99,6 @@ To fix it, the *glm* component needs to be declared into the *sbs.xml* file :
             <files path="exe"/>
          </delivery>
       </main>
-   </pack>
+   </component>
 
 Now compile and run.
