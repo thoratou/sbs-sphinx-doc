@@ -31,20 +31,24 @@ The easiest way to define compilation flags is to modify the sbs.xml file. For e
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <flags>
-            <flag key="HELLO_WORLD_TEXT" value="Hello you !!" type="string"/>
-         </flags>
-         <build>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      <target name="main">
+         <build type="cpp-executable">
+            <flags>
+               <flag key="HELLO_WORLD_TEXT" value="Hello you !!" type="string"/>
+            </flags>
+            <include>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
          <delivery>
-            <files path="exe"/>
+            <executable path="bin"/>
          </delivery>
-      </main>
+      </target>
    </component>
    
 Then compile and run it :
@@ -77,21 +81,25 @@ Let's take the basic flag example fromthe beginning of this page and define diff
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <flags>
-            <flag key="HELLO_WORLD_TEXT" value="Hello release !!" type="string" mode="release"/>
-            <flag key="HELLO_WORLD_TEXT" value="Hello debug !!" type="string" mode="debug"/>
-         </flags>
-         <build>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      <target name="main">
+         <build type="cpp-executable">
+            <flags>
+               <flag key="HELLO_WORLD_TEXT" value="Hello release !!" type="string" mode="release"/>
+               <flag key="HELLO_WORLD_TEXT" value="Hello debug !!" type="string" mode="debug"/>
+            </flags>
+            <include>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
          <delivery>
-            <files path="exe"/>
+            <executable path="bin"/>
          </delivery>
-      </main>
+      </target>
    </component>
    
 Then compile and run it in release mode :
@@ -146,21 +154,25 @@ For example :
       <properties>
          <name>HelloWorld</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <flags>
-            <cppflags text="-Wall -Werror" toolchain="x86-32_mingw"/>
-            <linkflags text="-enable-auto-import" toolchain="x86-32_mingw"/>
-         </flags>
-         <build>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      <target name="main">
+         <build type="cpp-executable">
+            <flags>
+               <cppflags text="-Wall -Werror" toolchain="x86-32_mingw"/>
+               <linkflags text="-enable-auto-import" toolchain="x86-32_mingw"/>
+            </flags>
+            <include>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
          <delivery>
-            <files path="exe"/>
+            <executable path="bin"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 In the same way, than component flags, you can define compiler flags for specific a build mode and/or toolchain.

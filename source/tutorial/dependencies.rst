@@ -85,20 +85,24 @@ To fix it, the *glm* component needs to be declared into the *sbs.xml* file :
       <properties>
          <name>Hello/GLM</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <dependencies>
-            <dependency name="glm" version="0.9.2.3"/>
-         </dependencies>
-         <build>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      <target name="main">
+         <build type="cpp-executable">
+            <dependencies>
+               <dependency name="glm" version="0.9.2.3" target="main"/>
+            </dependencies>
+            <include>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
          <delivery>
-            <files path="exe"/>
+            <executable path="bin"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 Now compile and run.

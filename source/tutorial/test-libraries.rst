@@ -26,25 +26,36 @@ You should have this output :
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
-         <type>static</type>
       </properties>
-      <main>
-         <build>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+      <target name="main">
+         <build type="cpp-static">
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
             <output path="lib"/>
          </build>
          <delivery>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="lib"/>
+            <include>
+               <path path="include"/>
+            </include>
+            <library path="lib"/>
          </delivery>
-      </main>
-      <test>
-         <build>
-            <files path="." filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      </target>
+      <target name="test" root="test">
+         <build type="cpp-executable">
+            <include>
+               <path path="."/>
+            </include>
+            <source>
+               <files path="." filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
-      </test>
+      </target>
    </component>
 
 The *test* folder has been created.
@@ -114,28 +125,39 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
-         <type>static</type>
       </properties>
-      <main>
-         <build>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+      <target name="main">
+         <build type="cpp-static">
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
             <output path="lib"/>
          </build>
          <delivery>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="lib"/>
+            <include>
+               <path path="include"/>
+            </include>
+            <library path="lib"/>
          </delivery>
-      </main>
-      <test>
-         <dependencies>
-            <dependency name="cppunit" version="1.12.1"/>
-         </dependencies>
-         <build>
-            <files path="." filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+      </target>
+      <target name="test" root="test">
+         <build type="cpp-executable">
+            <dependencies>
+               <dependency name="cppunit" version="1.12.1" target="main"/>
+            </dependencies>         
+            <include>
+               <path path="."/>
+            </include>
+            <source>
+               <files path="." filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
-      </test>
+      </target>
    </component>
 
 Now implement the following test files :

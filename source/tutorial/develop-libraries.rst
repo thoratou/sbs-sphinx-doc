@@ -26,19 +26,25 @@ THe *sbs.xml* file should contain those data :
       <properties>
          <name>Lib42/Static</name>
          <version>1.0.0</version>
-         <type>static</type>
       </properties>
-      <main>
-         <build>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+      <target name="main">
+         <build type="cpp-static">
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
             <output path="lib"/>
          </build>
          <delivery>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="lib"/>
+            <include>
+               <path path="include"/>
+            </include>
+            <library path="lib"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 Here the include folder is added in both *build* and *delivery* parts,
@@ -91,20 +97,19 @@ Then, add the dependency *Lib42/Static* in the component as follows :
       <properties>
          <name>Hello42</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <dependencies>
-            <dependency name="Lib42/Static" version="1.0.0"/>
-         </dependencies>
-         <build>
+      <target name="main">
+         <build type="cpp-executable">
+            <dependencies>
+               <dependency name="Lib42/Static" version="1.0.0" target="main"/>
+            </dependencies>
             <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
             <output path="exe"/>
          </build>
          <delivery>
             <files path="exe"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 At last, implement the *main.cpp* file.
@@ -141,24 +146,30 @@ This technical flag you help us to create a fully portable shared library.
    <?xml version="1.0" encoding="UTF-8"?>
    <component>
       <properties>
-         <name>Lib42/Shared</name>
+         <name>Lib42/Static</name>
          <version>1.0.0</version>
-         <type>shared</type>
       </properties>
-      <main>
-         <flags>
-            <flag flag="LIB_42_BUILD_SHARED_LIBRARY"/>
-         </flags>
-         <build>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
+      <target name="main">
+         <build type="cpp-static">
+            <flags>
+               <flag flag="LIB_42_BUILD_SHARED_LIBRARY"/>
+            </flags>
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
             <output path="lib"/>
          </build>
          <delivery>
-            <files path="include" filter="*.hpp,*.h,*.i" recursive="true"/>
-            <files path="lib"/>
+            <include>
+               <path path="include"/>
+            </include>
+            <library path="lib"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 Then, implement the library code sources.
@@ -225,20 +236,19 @@ You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
       <properties>
          <name>Hello42</name>
          <version>1.0.0</version>
-         <type>executable</type>
       </properties>
-      <main>
-         <dependencies>
-            <dependency name="Lib42/Shared" version="1.0.0"/>
-         </dependencies>
-         <build>
+      <target name="main">
+         <build type="cpp-executable">
+            <dependencies>
+               <dependency name="Lib42/Shared" version="1.0.0" target="main"/>
+            </dependencies>
             <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
             <output path="exe"/>
          </build>
          <delivery>
             <files path="exe"/>
          </delivery>
-      </main>
+      </target>
    </component>
 
 Compile and run the executable.
