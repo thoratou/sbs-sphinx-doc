@@ -38,9 +38,9 @@ Create your component file :
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
    

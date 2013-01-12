@@ -45,9 +45,9 @@ The easiest way to define compilation flags is to modify the sbs.xml file. For e
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
    
@@ -96,9 +96,9 @@ Let's take the basic flag example fromthe beginning of this page and define diff
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
    
@@ -169,9 +169,9 @@ For example :
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
 

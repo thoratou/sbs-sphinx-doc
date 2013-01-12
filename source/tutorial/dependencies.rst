@@ -99,9 +99,9 @@ To fix it, the *glm* component needs to be declared into the *sbs.xml* file :
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
 

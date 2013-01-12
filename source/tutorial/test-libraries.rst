@@ -38,12 +38,12 @@ You should have this output :
             </source>
             <output path="lib"/>
          </build>
-         <delivery>
+         <public>
             <include>
                <path path="include"/>
             </include>
             <library path="lib"/>
-         </delivery>
+         </public>
       </target>
       <target name="test" root="test">
          <build type="cpp-executable">
@@ -137,12 +137,12 @@ And modify the *sbs.xml* file to add the *cppunit* dependency :
             </source>
             <output path="lib"/>
          </build>
-         <delivery>
+         <public>
             <include>
                <path path="include"/>
             </include>
             <library path="lib"/>
-         </delivery>
+         </public>
       </target>
       <target name="test" root="test">
          <build type="cpp-executable">

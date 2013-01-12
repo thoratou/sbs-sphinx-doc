@@ -75,9 +75,9 @@ open the generated *sbs.xml* file to verify its data :
             </source>
             <output path="bin"/>
          </build>
-         <delivery>
+         <public>
             <executable path="bin"/>
-         </delivery>
+         </public>
       </target>
    </component>
    

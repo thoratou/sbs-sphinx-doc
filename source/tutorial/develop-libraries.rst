@@ -38,12 +38,12 @@ THe *sbs.xml* file should contain those data :
             </source>
             <output path="lib"/>
          </build>
-         <delivery>
+         <public>
             <include>
                <path path="include"/>
             </include>
             <library path="lib"/>
-         </delivery>
+         </public>
       </target>
    </component>
 
@@ -103,12 +103,18 @@ Then, add the dependency *Lib42/Static* in the component as follows :
             <dependencies>
                <dependency name="Lib42/Static" version="1.0.0" target="main"/>
             </dependencies>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
-         <delivery>
-            <files path="exe"/>
-         </delivery>
+         <public>
+            <executable path="bin"/>
+         </public>
       </target>
    </component>
 
@@ -163,12 +169,12 @@ This technical flag you help us to create a fully portable shared library.
             </source>
             <output path="lib"/>
          </build>
-         <delivery>
+         <public>
             <include>
                <path path="include"/>
             </include>
             <library path="lib"/>
-         </delivery>
+         </public>
       </target>
    </component>
 
@@ -242,12 +248,18 @@ You need to change the *Lib42/Static* library by the *Lib42/Shared* one.
             <dependencies>
                <dependency name="Lib42/Shared" version="1.0.0" target="main"/>
             </dependencies>
-            <files path="src" filter="*.cpp,*.cc,*.c,*.hpp,*.h,*.i" recursive="true"/>
-            <output path="exe"/>
+            <include>
+               <path path="include"/>
+               <path path="src"/>
+            </include>
+            <source>
+               <files path="src" filter="**/*.cpp,**/*.cc,**/*.c"/>
+            </source>
+            <output path="bin"/>
          </build>
-         <delivery>
-            <files path="exe"/>
-         </delivery>
+         <public>
+            <executable path="bin"/>
+         </public>
       </target>
    </component>
 
